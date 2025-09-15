@@ -1,9 +1,9 @@
 # PLSQL_casestudy1 
-# /*Scenario: Support Ticket Management System
+Scenario: Support Ticket Management System
 You are building a backend logic system for managing customer support tickets. Each ticket may have multiple messages or updates added over time. 
 These messages are stored and handled using PL/SQL collections (not directly stored in the table). You’ll implement message handling, logging, validation, 
 and reporting using PL/SQL constructs such as procedures, triggers, functions, cursors, records, and exception handling.
-Table Structures*/
+Table Structures 
 -- Support Tickets Table
 CREATE TABLE support_tickets (
   ticket_id NUMBER PRIMARY KEY,
