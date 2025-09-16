@@ -62,15 +62,17 @@ INSERT INTO ticket_messages VALUES (3, 302, 'Payment Error');
 # Practice Questions
 
 1. Create a procedure add_message that accepts a ticket ID and a message string, inserts a new message into ticket_messages, and updates the total_messages column in support_tickets. Handle invalid ticket IDs and null inputs with appropriate exceptions.
+   
+  ![problem1](https://github.com/user-attachments/assets/4ef0e066-3abc-4472-950e-997356dc428c)
+
+3. Write a BEFORE INSERT trigger on ticket_messages to prevent more than 5 messages being added to any ticket. Use the total_messages value to check limit.
+   
+4. Create a function get_message_count that accepts a ticket ID and returns the number of messages from ticket_messages. Handle invalid or missing tickets using proper exception handling.
+   
+5. Write a cursor-based block to print all tickets from support_tickets where no messages exist (i.e., total_messages = 0).
   
-2. Write a BEFORE INSERT trigger on ticket_messages to prevent more than 5 messages being added to any ticket. Use the total_messages value to check limit.
+6. Write a procedure log_ticket_action that accepts a ticket ID and a message like 'Message Added', and inserts an action log into ticket_log with timestamp.
    
-3. Create a function get_message_count that accepts a ticket ID and returns the number of messages from ticket_messages. Handle invalid or missing tickets using proper exception handling.
-   
-4. Write a cursor-based block to print all tickets from support_tickets where no messages exist (i.e., total_messages = 0).
-  
-5. Write a procedure log_ticket_action that accepts a ticket ID and a message like 'Message Added', and inserts an action log into ticket_log with timestamp.
-   
-6. Create a package support_pkg that wraps add_message, log_ticket_action, and get_message_count, using proper structure and exception safety throughout.
+7. Create a package support_pkg that wraps add_message, log_ticket_action, and get_message_count, using proper structure and exception safety throughout.
 
 
