@@ -65,7 +65,9 @@ INSERT INTO ticket_messages VALUES (3, 302, 'Payment Error');
    
   ![problem1](https://github.com/user-attachments/assets/4ef0e066-3abc-4472-950e-997356dc428c)
 
-3. Write a BEFORE INSERT trigger on ticket_messages to prevent more than 5 messages being added to any ticket. Use the total_messages value to check limit.
+2. Write a BEFORE INSERT trigger on ticket_messages to prevent more than 5 messages being added to any ticket. Use the total_messages value to check limit.
+
+   ![problem2](https://github.com/user-attachments/assets/a201df18-b255-43f0-b5a8-626410c71345)
    
 4. Create a function get_message_count that accepts a ticket ID and returns the number of messages from ticket_messages. Handle invalid or missing tickets using proper exception handling.
    
